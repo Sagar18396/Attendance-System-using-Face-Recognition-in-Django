@@ -4,4 +4,3 @@ from .models import ProductKey
 
 
 admin.site.register(ProductKey)
-    

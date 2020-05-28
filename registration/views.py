@@ -79,7 +79,7 @@ def login(request):
             # Checking username and password
             if data.employee_id == empid:
                 # Capturing image for recognition
-                cap = cv2.VideoCapture(0)
+                cap = cv2.VideoCapture(-1)
                 count = 0
                 while True:
                     ret, test_img = cap.read()
