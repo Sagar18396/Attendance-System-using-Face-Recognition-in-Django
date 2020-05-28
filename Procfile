@@ -1,1 +1,1 @@
-web: gunicorn AttendanceSystem.wsgi --log-file
+web: gunicorn AttendanceSystem.wsgi --log-file -
