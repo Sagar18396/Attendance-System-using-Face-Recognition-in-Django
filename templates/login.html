@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Attendance System {% endblock %}
+
+{% block content %}
+
+    <div class="container" id="login">
+        <h3>Proceed with login..</h3><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" class="form-control" name="empid" placeholder="Employee Id" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+{% endblock %}

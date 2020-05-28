@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Admin Login {% endblock %}
+
+
+{% block content%}
+    <div class="container" id="login">
+        <h3>Proceed with Admin login..</h3><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" class="form-control" name="username" placeholder="Admin Username" required><br>
+        <input type="password" class="form-control" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    </div>
+{% endblock%}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %} Attendance System {% endblock %}
+
+{% block content %}
+
+    <div class="container" id="emp_reg">
+        <h3>Add Employee..</h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        Product Key:<input type="text" class="form-control" name="product_key"><br>
+        Employee Id:<input type="text" class="form-control" name="employee_id"><br>
+        Employee Name:<input type="text" class="form-control" name="employee_name"><br>
+        Phone Number:<input type="text" class="form-control" name="number"><br>
+        Department Name:<input type="text" class="form-control" name="department"><br>
+        Profile Photo:<input type="file" class="form-control" name="profile_photo"><br>
+        <input type="submit" value="Add Employee"> &#09;
+        OR  &#09;
+    </form>
+
+    <form method="get" action="../../../">
+        <input type="submit" value="Home">
+    </form>
+    </div>
+{% endblock %}

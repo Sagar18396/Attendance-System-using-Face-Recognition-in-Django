@@ -1,0 +1,41 @@
+body{
+    position: relative;
+    background-image: url("../images/background.jpg");
+	color: white;
+    font-family: Comic sans MS;
+    padding-bottom:60px;
+}
+
+#register{
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    opacity: 65%;
+}
+
+#main{
+    padding: 10%;
+}
+
+#login{
+    padding: 10%;
+    opacity: 65%;
+}
+
+#emp_reg{
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    opacity: 65%;
+}
+
+.footer{
+    position: fixed;
+	width: 100%;
+	height: auto;
+	max-height: 250px;
+	bottom: 0;
+	left: 0;
+	background-color:  #A9A9A9;
+  font-family: Comic sans MS;
+}

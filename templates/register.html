@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Attendance System {% endblock %}
+
+{% block content %}
+
+    <div class="container" id="register">
+        <h3>Register here..</h3><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" class="form-control" name="product_key" placeholder="Product Key" required><br>
+        <input type="text" class="form-control" name="admin_name" placeholder="Name" required><br>
+        <input type="text" class="form-control" name="number" placeholder="Mobile Number" required><br>
+        <input type="text" class="form-control" name="organisation" placeholder="Organisation" required><br>
+        <input type="text" class="form-control" name="username" placeholder="Username" required><br>
+        <input type="password" class="form-control" name="pass1" id="pass1" placeholder="Password" required><br>
+        <input type="password" class="form-control" name="pass2" id="pass2" placeholder="Repeat Password" onChange="checkPasswordMatch()" required><br>
+        <div id="alert"></div>
+        <a href="{% url 'register' %}"><button>Submit</button></a>
+    </form>
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    </div>
+{% endblock %}
