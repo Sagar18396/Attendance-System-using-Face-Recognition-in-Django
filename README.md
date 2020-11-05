@@ -11,3 +11,6 @@ Working:
 - After that the model trains itself with the training data which was given to it while registration.
 - Finally it detects the face, creates an excel sheet and records entry along with date time.
 - Admin of organisation can log in and download the excel to see who all marked their attendance for the day and at what time.
+
+The project is live on:
+https://damp-beyond-74784.herokuapp.com/
