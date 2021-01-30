@@ -12,5 +12,7 @@ Working:
 - Finally it detects the face, creates an excel sheet and records entry along with date time.
 - Admin of organisation can log in and download the excel to see who all marked their attendance for the day and at what time.
 
+The project demonstration can be found https://drive.google.com/file/d/1X0iZCJZ3U3gYC21tMoMjz4PuHswb6Bsw/view?usp=sharing.
+
 The project is live on:
 https://damp-beyond-74784.herokuapp.com/
